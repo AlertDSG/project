@@ -30,7 +30,7 @@ showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
     for (let j = 1; j <= 3; j++) {
-        personalMovieDB.genres[j - 1] = prompt("Ваш любимый жанр под номером ${номер по порядку}");
+        personalMovieDB.genres[j - 1] = prompt(`Ваш любимый жанр под номером ${j}`);
     }
 }
 
@@ -57,10 +57,10 @@ function rememberMyFilms() {
     
         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
             personalMovieDB.movies[a] = b;
-            console.log('done')    
+            console.log('done');   
         } else {
             i--;
-            console.log('error')
+            console.log('error');
         }
     }
 }
